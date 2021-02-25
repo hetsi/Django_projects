@@ -1,0 +1,10 @@
+<ul>
+    {% for item in cart%}
+    <li><span>{{item.name}} : {{item.quantity}}</span>
+    <form action="/shoppingApp/delete_items/{{item.name}}">
+        <input type = "submit" value = "delete">
+
+    </form>
+    </li>
+    {% endfor %}
+</ul>
